@@ -1,0 +1,3268 @@
+{
+  "experiment_info": {
+    "total_rounds": 125,
+    "total_time_sec": 0.8342604637145996,
+    "convergence_round": 5,
+    "convergence_time_sec": 0.07557320594787598,
+    "model_size_bytes": 278100,
+    "model_size_kb": 271.58203125
+  },
+  "attack_info": {
+    "start_round": 111,
+    "detected_round": 112,
+    "pre_attack_accuracy": null
+  },
+  "ch_reelection_events": [],
+  "round_history": [
+    {
+      "round": 1,
+      "phase": "Normal",
+      "duration_sec": 0.05911707878112793,
+      "cumulative_sec": 0.05911707878112793,
+      "cpu_percent": 98.5,
+      "memory_mb": 48.1875,
+      "accuracies": {
+        "traffic": 0.326,
+        "duration": 0.256,
+        "bandwidth": 0.33
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 2,
+      "phase": "Normal",
+      "duration_sec": 0.00308990478515625,
+      "cumulative_sec": 0.06220698356628418,
+      "cpu_percent": 98.8,
+      "memory_mb": 50.21875,
+      "accuracies": {
+        "traffic": 0.358,
+        "duration": 0.3,
+        "bandwidth": 0.304
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 3,
+      "phase": "Normal",
+      "duration_sec": 0.0036020278930664062,
+      "cumulative_sec": 0.06580901145935059,
+      "cpu_percent": 88.1,
+      "memory_mb": 52.3125,
+      "accuracies": {
+        "traffic": 0.354,
+        "duration": 0.35,
+        "bandwidth": 0.29
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 4,
+      "phase": "Normal",
+      "duration_sec": 0.004209995269775391,
+      "cumulative_sec": 0.07001900672912598,
+      "cpu_percent": 32.1,
+      "memory_mb": 51.71875,
+      "accuracies": {
+        "traffic": 0.332,
+        "duration": 0.466,
+        "bandwidth": 0.286
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 5,
+      "phase": "Normal",
+      "duration_sec": 0.00555419921875,
+      "cumulative_sec": 0.07557320594787598,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.09375,
+      "accuracies": {
+        "traffic": 0.316,
+        "duration": 0.458,
+        "bandwidth": 0.348
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 6,
+      "phase": "Normal",
+      "duration_sec": 0.0037970542907714844,
+      "cumulative_sec": 0.07937026023864746,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.21875,
+      "accuracies": {
+        "traffic": 0.306,
+        "duration": 0.494,
+        "bandwidth": 0.286
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 7,
+      "phase": "Normal",
+      "duration_sec": 0.004422187805175781,
+      "cumulative_sec": 0.08379244804382324,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.53125,
+      "accuracies": {
+        "traffic": 0.324,
+        "duration": 0.522,
+        "bandwidth": 0.26
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 8,
+      "phase": "Normal",
+      "duration_sec": 0.0043070316314697266,
+      "cumulative_sec": 0.08809947967529297,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.328125,
+      "accuracies": {
+        "traffic": 0.334,
+        "duration": 0.54,
+        "bandwidth": 0.24
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 9,
+      "phase": "Normal",
+      "duration_sec": 0.0049250125885009766,
+      "cumulative_sec": 0.09302449226379395,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.9375,
+      "accuracies": {
+        "traffic": 0.334,
+        "duration": 0.514,
+        "bandwidth": 0.25
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 10,
+      "phase": "Normal",
+      "duration_sec": 0.0068700313568115234,
+      "cumulative_sec": 0.09989452362060547,
+      "cpu_percent": 0.0,
+      "memory_mb": 60.15625,
+      "accuracies": {
+        "traffic": 0.342,
+        "duration": 0.52,
+        "bandwidth": 0.294
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 11,
+      "phase": "Normal",
+      "duration_sec": 0.010334014892578125,
+      "cumulative_sec": 0.1102285385131836,
+      "cpu_percent": 94.6,
+      "memory_mb": 59.203125,
+      "accuracies": {
+        "traffic": 0.32,
+        "duration": 0.544,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 12,
+      "phase": "Normal",
+      "duration_sec": 0.004365205764770508,
+      "cumulative_sec": 0.1145937442779541,
+      "cpu_percent": 100.0,
+      "memory_mb": 59.40625,
+      "accuracies": {
+        "traffic": 0.326,
+        "duration": 0.534,
+        "bandwidth": 0.26
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 13,
+      "phase": "Normal",
+      "duration_sec": 0.0059468746185302734,
+      "cumulative_sec": 0.12054061889648438,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.21875,
+      "accuracies": {
+        "traffic": 0.318,
+        "duration": 0.526,
+        "bandwidth": 0.262
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 14,
+      "phase": "Normal",
+      "duration_sec": 0.008887052536010742,
+      "cumulative_sec": 0.12942767143249512,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.34375,
+      "accuracies": {
+        "traffic": 0.304,
+        "duration": 0.542,
+        "bandwidth": 0.244
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 15,
+      "phase": "Normal",
+      "duration_sec": 0.006086826324462891,
+      "cumulative_sec": 0.135514497756958,
+      "cpu_percent": 0.0,
+      "memory_mb": 58.9375,
+      "accuracies": {
+        "traffic": 0.266,
+        "duration": 0.516,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 16,
+      "phase": "Normal",
+      "duration_sec": 0.005151987075805664,
+      "cumulative_sec": 0.14066648483276367,
+      "cpu_percent": 0.0,
+      "memory_mb": 58.453125,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.542,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 17,
+      "phase": "Normal",
+      "duration_sec": 0.003483295440673828,
+      "cumulative_sec": 0.1441497802734375,
+      "cpu_percent": 0.0,
+      "memory_mb": 60.140625,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.58,
+        "bandwidth": 0.3
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 18,
+      "phase": "Normal",
+      "duration_sec": 0.006165981292724609,
+      "cumulative_sec": 0.1503157615661621,
+      "cpu_percent": 0.0,
+      "memory_mb": 62.46875,
+      "accuracies": {
+        "traffic": 0.294,
+        "duration": 0.594,
+        "bandwidth": 0.24
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 19,
+      "phase": "Normal",
+      "duration_sec": 0.007478237152099609,
+      "cumulative_sec": 0.15779399871826172,
+      "cpu_percent": 0.0,
+      "memory_mb": 60.046875,
+      "accuracies": {
+        "traffic": 0.33,
+        "duration": 0.576,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 20,
+      "phase": "Normal",
+      "duration_sec": 0.005587100982666016,
+      "cumulative_sec": 0.16338109970092773,
+      "cpu_percent": 0.0,
+      "memory_mb": 62.0625,
+      "accuracies": {
+        "traffic": 0.314,
+        "duration": 0.596,
+        "bandwidth": 0.24
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 21,
+      "phase": "Normal",
+      "duration_sec": 0.008585929870605469,
+      "cumulative_sec": 0.1719670295715332,
+      "cpu_percent": 100.0,
+      "memory_mb": 59.28125,
+      "accuracies": {
+        "traffic": 0.316,
+        "duration": 0.528,
+        "bandwidth": 0.228
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 22,
+      "phase": "Normal",
+      "duration_sec": 0.0035400390625,
+      "cumulative_sec": 0.1755070686340332,
+      "cpu_percent": 96.2,
+      "memory_mb": 57.015625,
+      "accuracies": {
+        "traffic": 0.328,
+        "duration": 0.6,
+        "bandwidth": 0.23
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 23,
+      "phase": "Normal",
+      "duration_sec": 0.005820035934448242,
+      "cumulative_sec": 0.18132710456848145,
+      "cpu_percent": 100.0,
+      "memory_mb": 53.875,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.542,
+        "bandwidth": 0.262
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 24,
+      "phase": "Normal",
+      "duration_sec": 0.006681203842163086,
+      "cumulative_sec": 0.18800830841064453,
+      "cpu_percent": 100.0,
+      "memory_mb": 53.609375,
+      "accuracies": {
+        "traffic": 0.266,
+        "duration": 0.602,
+        "bandwidth": 0.254
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 25,
+      "phase": "Normal",
+      "duration_sec": 0.005846977233886719,
+      "cumulative_sec": 0.19385528564453125,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.578125,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.616,
+        "bandwidth": 0.226
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 26,
+      "phase": "Normal",
+      "duration_sec": 0.004053831100463867,
+      "cumulative_sec": 0.19790911674499512,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.46875,
+      "accuracies": {
+        "traffic": 0.282,
+        "duration": 0.616,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 27,
+      "phase": "Normal",
+      "duration_sec": 0.004609107971191406,
+      "cumulative_sec": 0.20251822471618652,
+      "cpu_percent": 0.0,
+      "memory_mb": 59.8125,
+      "accuracies": {
+        "traffic": 0.288,
+        "duration": 0.55,
+        "bandwidth": 0.222
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 28,
+      "phase": "Normal",
+      "duration_sec": 0.004631996154785156,
+      "cumulative_sec": 0.20715022087097168,
+      "cpu_percent": 0.0,
+      "memory_mb": 60.53125,
+      "accuracies": {
+        "traffic": 0.284,
+        "duration": 0.616,
+        "bandwidth": 0.234
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 29,
+      "phase": "Normal",
+      "duration_sec": 0.011849164962768555,
+      "cumulative_sec": 0.21899938583374023,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.140625,
+      "accuracies": {
+        "traffic": 0.304,
+        "duration": 0.61,
+        "bandwidth": 0.258
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 30,
+      "phase": "Normal",
+      "duration_sec": 0.005721092224121094,
+      "cumulative_sec": 0.22472047805786133,
+      "cpu_percent": 100.0,
+      "memory_mb": 56.46875,
+      "accuracies": {
+        "traffic": 0.312,
+        "duration": 0.6,
+        "bandwidth": 0.226
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 31,
+      "phase": "Normal",
+      "duration_sec": 0.004400014877319336,
+      "cumulative_sec": 0.22912049293518066,
+      "cpu_percent": 100.0,
+      "memory_mb": 56.96875,
+      "accuracies": {
+        "traffic": 0.276,
+        "duration": 0.61,
+        "bandwidth": 0.23
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 32,
+      "phase": "Normal",
+      "duration_sec": 0.005772113800048828,
+      "cumulative_sec": 0.2348926067352295,
+      "cpu_percent": 0.0,
+      "memory_mb": 58.5,
+      "accuracies": {
+        "traffic": 0.278,
+        "duration": 0.626,
+        "bandwidth": 0.252
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 33,
+      "phase": "Normal",
+      "duration_sec": 0.007428169250488281,
+      "cumulative_sec": 0.24232077598571777,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.984375,
+      "accuracies": {
+        "traffic": 0.282,
+        "duration": 0.63,
+        "bandwidth": 0.258
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 34,
+      "phase": "Normal",
+      "duration_sec": 0.005785703659057617,
+      "cumulative_sec": 0.2481064796447754,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.1875,
+      "accuracies": {
+        "traffic": 0.328,
+        "duration": 0.644,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 35,
+      "phase": "Normal",
+      "duration_sec": 0.005726814270019531,
+      "cumulative_sec": 0.2538332939147949,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.828125,
+      "accuracies": {
+        "traffic": 0.34,
+        "duration": 0.642,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 36,
+      "phase": "Normal",
+      "duration_sec": 0.0051860809326171875,
+      "cumulative_sec": 0.2590193748474121,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.21875,
+      "accuracies": {
+        "traffic": 0.318,
+        "duration": 0.674,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 37,
+      "phase": "Normal",
+      "duration_sec": 0.005775928497314453,
+      "cumulative_sec": 0.26479530334472656,
+      "cpu_percent": 0.0,
+      "memory_mb": 52.71875,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.694,
+        "bandwidth": 0.252
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 38,
+      "phase": "Normal",
+      "duration_sec": 0.00505518913269043,
+      "cumulative_sec": 0.269850492477417,
+      "cpu_percent": 0.0,
+      "memory_mb": 52.296875,
+      "accuracies": {
+        "traffic": 0.31,
+        "duration": 0.67,
+        "bandwidth": 0.278
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 39,
+      "phase": "Normal",
+      "duration_sec": 0.00601506233215332,
+      "cumulative_sec": 0.2758655548095703,
+      "cpu_percent": 100.0,
+      "memory_mb": 56.046875,
+      "accuracies": {
+        "traffic": 0.272,
+        "duration": 0.698,
+        "bandwidth": 0.246
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 40,
+      "phase": "Normal",
+      "duration_sec": 0.003998994827270508,
+      "cumulative_sec": 0.2798645496368408,
+      "cpu_percent": 94.0,
+      "memory_mb": 55.765625,
+      "accuracies": {
+        "traffic": 0.286,
+        "duration": 0.692,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 41,
+      "phase": "Normal",
+      "duration_sec": 0.004065752029418945,
+      "cumulative_sec": 0.28393030166625977,
+      "cpu_percent": 96.4,
+      "memory_mb": 43.71875,
+      "accuracies": {
+        "traffic": 0.308,
+        "duration": 0.66,
+        "bandwidth": 0.274
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 42,
+      "phase": "Normal",
+      "duration_sec": 0.006312131881713867,
+      "cumulative_sec": 0.29024243354797363,
+      "cpu_percent": 0.0,
+      "memory_mb": 47.15625,
+      "accuracies": {
+        "traffic": 0.316,
+        "duration": 0.706,
+        "bandwidth": 0.284
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 43,
+      "phase": "Normal",
+      "duration_sec": 0.0051610469818115234,
+      "cumulative_sec": 0.29540348052978516,
+      "cpu_percent": 0.0,
+      "memory_mb": 50.015625,
+      "accuracies": {
+        "traffic": 0.284,
+        "duration": 0.674,
+        "bandwidth": 0.24
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 44,
+      "phase": "Normal",
+      "duration_sec": 0.008665800094604492,
+      "cumulative_sec": 0.30406928062438965,
+      "cpu_percent": 0.0,
+      "memory_mb": 53.078125,
+      "accuracies": {
+        "traffic": 0.276,
+        "duration": 0.706,
+        "bandwidth": 0.272
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 45,
+      "phase": "Normal",
+      "duration_sec": 0.004690885543823242,
+      "cumulative_sec": 0.3087601661682129,
+      "cpu_percent": 0.0,
+      "memory_mb": 53.9375,
+      "accuracies": {
+        "traffic": 0.254,
+        "duration": 0.67,
+        "bandwidth": 0.268
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 46,
+      "phase": "Normal",
+      "duration_sec": 0.005978107452392578,
+      "cumulative_sec": 0.31473827362060547,
+      "cpu_percent": 0.0,
+      "memory_mb": 53.1875,
+      "accuracies": {
+        "traffic": 0.302,
+        "duration": 0.656,
+        "bandwidth": 0.25
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 47,
+      "phase": "Normal",
+      "duration_sec": 0.0048487186431884766,
+      "cumulative_sec": 0.31958699226379395,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.65625,
+      "accuracies": {
+        "traffic": 0.288,
+        "duration": 0.694,
+        "bandwidth": 0.268
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 48,
+      "phase": "Normal",
+      "duration_sec": 0.0032100677490234375,
+      "cumulative_sec": 0.3227970600128174,
+      "cpu_percent": 98.5,
+      "memory_mb": 54.390625,
+      "accuracies": {
+        "traffic": 0.308,
+        "duration": 0.674,
+        "bandwidth": 0.292
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 49,
+      "phase": "Normal",
+      "duration_sec": 0.003032207489013672,
+      "cumulative_sec": 0.32582926750183105,
+      "cpu_percent": 95.2,
+      "memory_mb": 55.5,
+      "accuracies": {
+        "traffic": 0.282,
+        "duration": 0.72,
+        "bandwidth": 0.276
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 50,
+      "phase": "Normal",
+      "duration_sec": 0.004631757736206055,
+      "cumulative_sec": 0.3304610252380371,
+      "cpu_percent": 97.6,
+      "memory_mb": 56.578125,
+      "accuracies": {
+        "traffic": 0.298,
+        "duration": 0.724,
+        "bandwidth": 0.26
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 51,
+      "phase": "Normal",
+      "duration_sec": 0.005478858947753906,
+      "cumulative_sec": 0.335939884185791,
+      "cpu_percent": 100.0,
+      "memory_mb": 55.484375,
+      "accuracies": {
+        "traffic": 0.306,
+        "duration": 0.706,
+        "bandwidth": 0.278
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 52,
+      "phase": "Normal",
+      "duration_sec": 0.004785060882568359,
+      "cumulative_sec": 0.3407249450683594,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.28125,
+      "accuracies": {
+        "traffic": 0.3,
+        "duration": 0.714,
+        "bandwidth": 0.258
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 53,
+      "phase": "Normal",
+      "duration_sec": 0.00558018684387207,
+      "cumulative_sec": 0.34630513191223145,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.59375,
+      "accuracies": {
+        "traffic": 0.322,
+        "duration": 0.736,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 54,
+      "phase": "Normal",
+      "duration_sec": 0.005667924880981445,
+      "cumulative_sec": 0.3519730567932129,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.1875,
+      "accuracies": {
+        "traffic": 0.294,
+        "duration": 0.688,
+        "bandwidth": 0.252
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 55,
+      "phase": "Normal",
+      "duration_sec": 0.008985042572021484,
+      "cumulative_sec": 0.3609580993652344,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.59375,
+      "accuracies": {
+        "traffic": 0.302,
+        "duration": 0.712,
+        "bandwidth": 0.288
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 56,
+      "phase": "Normal",
+      "duration_sec": 0.0051801204681396484,
+      "cumulative_sec": 0.366138219833374,
+      "cpu_percent": 0.0,
+      "memory_mb": 58.453125,
+      "accuracies": {
+        "traffic": 0.286,
+        "duration": 0.668,
+        "bandwidth": 0.24
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 57,
+      "phase": "Normal",
+      "duration_sec": 0.005690097808837891,
+      "cumulative_sec": 0.3718283176422119,
+      "cpu_percent": 0.0,
+      "memory_mb": 61.875,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.702,
+        "bandwidth": 0.27
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 58,
+      "phase": "Normal",
+      "duration_sec": 0.006273984909057617,
+      "cumulative_sec": 0.37810230255126953,
+      "cpu_percent": 98.7,
+      "memory_mb": 62.515625,
+      "accuracies": {
+        "traffic": 0.262,
+        "duration": 0.668,
+        "bandwidth": 0.29
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 59,
+      "phase": "Normal",
+      "duration_sec": 0.003955364227294922,
+      "cumulative_sec": 0.38205766677856445,
+      "cpu_percent": 95.2,
+      "memory_mb": 60.21875,
+      "accuracies": {
+        "traffic": 0.274,
+        "duration": 0.718,
+        "bandwidth": 0.254
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 60,
+      "phase": "Normal",
+      "duration_sec": 0.004580974578857422,
+      "cumulative_sec": 0.3866386413574219,
+      "cpu_percent": 92.9,
+      "memory_mb": 63.765625,
+      "accuracies": {
+        "traffic": 0.304,
+        "duration": 0.718,
+        "bandwidth": 0.278
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 61,
+      "phase": "Normal",
+      "duration_sec": 0.0036101341247558594,
+      "cumulative_sec": 0.39024877548217773,
+      "cpu_percent": 76.8,
+      "memory_mb": 57.515625,
+      "accuracies": {
+        "traffic": 0.256,
+        "duration": 0.72,
+        "bandwidth": 0.3
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 62,
+      "phase": "Normal",
+      "duration_sec": 0.00614619255065918,
+      "cumulative_sec": 0.3963949680328369,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.75,
+      "accuracies": {
+        "traffic": 0.252,
+        "duration": 0.722,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 63,
+      "phase": "Normal",
+      "duration_sec": 0.005236148834228516,
+      "cumulative_sec": 0.40163111686706543,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.984375,
+      "accuracies": {
+        "traffic": 0.31,
+        "duration": 0.734,
+        "bandwidth": 0.296
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 64,
+      "phase": "Normal",
+      "duration_sec": 0.005362987518310547,
+      "cumulative_sec": 0.406994104385376,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.109375,
+      "accuracies": {
+        "traffic": 0.278,
+        "duration": 0.734,
+        "bandwidth": 0.294
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 65,
+      "phase": "Normal",
+      "duration_sec": 0.0044019222259521484,
+      "cumulative_sec": 0.4113960266113281,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.921875,
+      "accuracies": {
+        "traffic": 0.274,
+        "duration": 0.758,
+        "bandwidth": 0.272
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 66,
+      "phase": "Normal",
+      "duration_sec": 0.007211208343505859,
+      "cumulative_sec": 0.418607234954834,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.078125,
+      "accuracies": {
+        "traffic": 0.244,
+        "duration": 0.762,
+        "bandwidth": 0.248
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 67,
+      "phase": "Normal",
+      "duration_sec": 0.004697084426879883,
+      "cumulative_sec": 0.42330431938171387,
+      "cpu_percent": 0.0,
+      "memory_mb": 58.140625,
+      "accuracies": {
+        "traffic": 0.282,
+        "duration": 0.738,
+        "bandwidth": 0.252
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 68,
+      "phase": "Normal",
+      "duration_sec": 0.0055429935455322266,
+      "cumulative_sec": 0.4288473129272461,
+      "cpu_percent": 97.6,
+      "memory_mb": 58.0,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.742,
+        "bandwidth": 0.258
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 69,
+      "phase": "Normal",
+      "duration_sec": 0.00609898567199707,
+      "cumulative_sec": 0.43494629859924316,
+      "cpu_percent": 97.6,
+      "memory_mb": 57.8125,
+      "accuracies": {
+        "traffic": 0.308,
+        "duration": 0.748,
+        "bandwidth": 0.254
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 70,
+      "phase": "Normal",
+      "duration_sec": 0.005887031555175781,
+      "cumulative_sec": 0.44083333015441895,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.75,
+      "accuracies": {
+        "traffic": 0.312,
+        "duration": 0.756,
+        "bandwidth": 0.29
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 71,
+      "phase": "Normal",
+      "duration_sec": 0.004221916198730469,
+      "cumulative_sec": 0.4450552463531494,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.078125,
+      "accuracies": {
+        "traffic": 0.3,
+        "duration": 0.756,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 72,
+      "phase": "Normal",
+      "duration_sec": 0.004318952560424805,
+      "cumulative_sec": 0.4493741989135742,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.90625,
+      "accuracies": {
+        "traffic": 0.308,
+        "duration": 0.748,
+        "bandwidth": 0.23
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 73,
+      "phase": "Normal",
+      "duration_sec": 0.006715059280395508,
+      "cumulative_sec": 0.4560892581939697,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.0625,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.738,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 74,
+      "phase": "Normal",
+      "duration_sec": 0.004552125930786133,
+      "cumulative_sec": 0.46064138412475586,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.15625,
+      "accuracies": {
+        "traffic": 0.272,
+        "duration": 0.76,
+        "bandwidth": 0.262
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 75,
+      "phase": "Normal",
+      "duration_sec": 0.06998682022094727,
+      "cumulative_sec": 0.5306282043457031,
+      "cpu_percent": 0.0,
+      "memory_mb": 47.390625,
+      "accuracies": {
+        "traffic": 0.272,
+        "duration": 0.766,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 76,
+      "phase": "Normal",
+      "duration_sec": 0.012477874755859375,
+      "cumulative_sec": 0.5431060791015625,
+      "cpu_percent": 100.0,
+      "memory_mb": 46.328125,
+      "accuracies": {
+        "traffic": 0.308,
+        "duration": 0.728,
+        "bandwidth": 0.272
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 77,
+      "phase": "Normal",
+      "duration_sec": 0.004480123519897461,
+      "cumulative_sec": 0.54758620262146,
+      "cpu_percent": 0.0,
+      "memory_mb": 48.578125,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.752,
+        "bandwidth": 0.256
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 78,
+      "phase": "Normal",
+      "duration_sec": 0.003958940505981445,
+      "cumulative_sec": 0.5515451431274414,
+      "cpu_percent": 0.0,
+      "memory_mb": 48.28125,
+      "accuracies": {
+        "traffic": 0.254,
+        "duration": 0.748,
+        "bandwidth": 0.26
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 79,
+      "phase": "Normal",
+      "duration_sec": 0.0039103031158447266,
+      "cumulative_sec": 0.5554554462432861,
+      "cpu_percent": 0.0,
+      "memory_mb": 50.015625,
+      "accuracies": {
+        "traffic": 0.32,
+        "duration": 0.732,
+        "bandwidth": 0.254
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 80,
+      "phase": "Normal",
+      "duration_sec": 0.005904197692871094,
+      "cumulative_sec": 0.5613596439361572,
+      "cpu_percent": 0.0,
+      "memory_mb": 50.09375,
+      "accuracies": {
+        "traffic": 0.28,
+        "duration": 0.75,
+        "bandwidth": 0.224
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 81,
+      "phase": "Normal",
+      "duration_sec": 0.00556182861328125,
+      "cumulative_sec": 0.5669214725494385,
+      "cpu_percent": 0.0,
+      "memory_mb": 51.296875,
+      "accuracies": {
+        "traffic": 0.266,
+        "duration": 0.786,
+        "bandwidth": 0.274
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 82,
+      "phase": "Normal",
+      "duration_sec": 0.0072193145751953125,
+      "cumulative_sec": 0.5741407871246338,
+      "cpu_percent": 0.0,
+      "memory_mb": 52.53125,
+      "accuracies": {
+        "traffic": 0.29,
+        "duration": 0.768,
+        "bandwidth": 0.27
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 83,
+      "phase": "Normal",
+      "duration_sec": 0.00783085823059082,
+      "cumulative_sec": 0.5819716453552246,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.109375,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.778,
+        "bandwidth": 0.29
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 84,
+      "phase": "Normal",
+      "duration_sec": 0.005168914794921875,
+      "cumulative_sec": 0.5871405601501465,
+      "cpu_percent": 0.0,
+      "memory_mb": 52.0625,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.752,
+        "bandwidth": 0.272
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 85,
+      "phase": "Normal",
+      "duration_sec": 0.0058329105377197266,
+      "cumulative_sec": 0.5929734706878662,
+      "cpu_percent": 99.5,
+      "memory_mb": 51.671875,
+      "accuracies": {
+        "traffic": 0.278,
+        "duration": 0.74,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 86,
+      "phase": "Normal",
+      "duration_sec": 0.006628990173339844,
+      "cumulative_sec": 0.599602460861206,
+      "cpu_percent": 100.0,
+      "memory_mb": 54.390625,
+      "accuracies": {
+        "traffic": 0.274,
+        "duration": 0.768,
+        "bandwidth": 0.276
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 87,
+      "phase": "Normal",
+      "duration_sec": 0.0060291290283203125,
+      "cumulative_sec": 0.6056315898895264,
+      "cpu_percent": 100.0,
+      "memory_mb": 50.6875,
+      "accuracies": {
+        "traffic": 0.314,
+        "duration": 0.766,
+        "bandwidth": 0.25
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 88,
+      "phase": "Normal",
+      "duration_sec": 0.008487224578857422,
+      "cumulative_sec": 0.6141188144683838,
+      "cpu_percent": 100.0,
+      "memory_mb": 52.921875,
+      "accuracies": {
+        "traffic": 0.286,
+        "duration": 0.756,
+        "bandwidth": 0.284
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 89,
+      "phase": "Normal",
+      "duration_sec": 0.004080057144165039,
+      "cumulative_sec": 0.6181988716125488,
+      "cpu_percent": 98.8,
+      "memory_mb": 55.03125,
+      "accuracies": {
+        "traffic": 0.284,
+        "duration": 0.766,
+        "bandwidth": 0.254
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 90,
+      "phase": "Normal",
+      "duration_sec": 0.005754709243774414,
+      "cumulative_sec": 0.6239535808563232,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.34375,
+      "accuracies": {
+        "traffic": 0.32,
+        "duration": 0.778,
+        "bandwidth": 0.28
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 91,
+      "phase": "Normal",
+      "duration_sec": 0.007609844207763672,
+      "cumulative_sec": 0.6315634250640869,
+      "cpu_percent": 0.0,
+      "memory_mb": 53.0,
+      "accuracies": {
+        "traffic": 0.3,
+        "duration": 0.774,
+        "bandwidth": 0.29
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 92,
+      "phase": "Normal",
+      "duration_sec": 0.003457784652709961,
+      "cumulative_sec": 0.6350212097167969,
+      "cpu_percent": 0.0,
+      "memory_mb": 52.921875,
+      "accuracies": {
+        "traffic": 0.276,
+        "duration": 0.748,
+        "bandwidth": 0.29
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 93,
+      "phase": "Normal",
+      "duration_sec": 0.0035529136657714844,
+      "cumulative_sec": 0.6385741233825684,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.21875,
+      "accuracies": {
+        "traffic": 0.262,
+        "duration": 0.768,
+        "bandwidth": 0.258
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 94,
+      "phase": "Normal",
+      "duration_sec": 0.005755901336669922,
+      "cumulative_sec": 0.6443300247192383,
+      "cpu_percent": 0.0,
+      "memory_mb": 54.8125,
+      "accuracies": {
+        "traffic": 0.28,
+        "duration": 0.768,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 95,
+      "phase": "Normal",
+      "duration_sec": 0.006865024566650391,
+      "cumulative_sec": 0.6511950492858887,
+      "cpu_percent": 97.6,
+      "memory_mb": 57.9375,
+      "accuracies": {
+        "traffic": 0.282,
+        "duration": 0.79,
+        "bandwidth": 0.278
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 96,
+      "phase": "Normal",
+      "duration_sec": 0.006792306900024414,
+      "cumulative_sec": 0.6579873561859131,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.890625,
+      "accuracies": {
+        "traffic": 0.314,
+        "duration": 0.782,
+        "bandwidth": 0.274
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 97,
+      "phase": "Normal",
+      "duration_sec": 0.004715919494628906,
+      "cumulative_sec": 0.662703275680542,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.140625,
+      "accuracies": {
+        "traffic": 0.3,
+        "duration": 0.778,
+        "bandwidth": 0.274
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 98,
+      "phase": "Normal",
+      "duration_sec": 0.0042150020599365234,
+      "cumulative_sec": 0.6669182777404785,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.171875,
+      "accuracies": {
+        "traffic": 0.28,
+        "duration": 0.782,
+        "bandwidth": 0.292
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 99,
+      "phase": "Normal",
+      "duration_sec": 0.005655765533447266,
+      "cumulative_sec": 0.6725740432739258,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.28125,
+      "accuracies": {
+        "traffic": 0.276,
+        "duration": 0.78,
+        "bandwidth": 0.272
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 100,
+      "phase": "Normal",
+      "duration_sec": 0.006498098373413086,
+      "cumulative_sec": 0.6790721416473389,
+      "cpu_percent": 0.0,
+      "memory_mb": 59.0,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.776,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 101,
+      "phase": "Normal",
+      "duration_sec": 0.004928112030029297,
+      "cumulative_sec": 0.6840002536773682,
+      "cpu_percent": 0.0,
+      "memory_mb": 60.625,
+      "accuracies": {
+        "traffic": 0.284,
+        "duration": 0.8,
+        "bandwidth": 0.268
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 102,
+      "phase": "Normal",
+      "duration_sec": 0.008080005645751953,
+      "cumulative_sec": 0.6920802593231201,
+      "cpu_percent": 0.0,
+      "memory_mb": 61.90625,
+      "accuracies": {
+        "traffic": 0.29,
+        "duration": 0.762,
+        "bandwidth": 0.28
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 103,
+      "phase": "Normal",
+      "duration_sec": 0.004693031311035156,
+      "cumulative_sec": 0.6967732906341553,
+      "cpu_percent": 0.0,
+      "memory_mb": 62.65625,
+      "accuracies": {
+        "traffic": 0.284,
+        "duration": 0.784,
+        "bandwidth": 0.276
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 104,
+      "phase": "Normal",
+      "duration_sec": 0.0063190460205078125,
+      "cumulative_sec": 0.7030923366546631,
+      "cpu_percent": 86.4,
+      "memory_mb": 63.125,
+      "accuracies": {
+        "traffic": 0.286,
+        "duration": 0.77,
+        "bandwidth": 0.308
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 105,
+      "phase": "Normal",
+      "duration_sec": 0.0045969486236572266,
+      "cumulative_sec": 0.7076892852783203,
+      "cpu_percent": 100.0,
+      "memory_mb": 61.125,
+      "accuracies": {
+        "traffic": 0.272,
+        "duration": 0.748,
+        "bandwidth": 0.258
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 106,
+      "phase": "Normal",
+      "duration_sec": 0.004949092864990234,
+      "cumulative_sec": 0.7126383781433105,
+      "cpu_percent": 100.0,
+      "memory_mb": 61.765625,
+      "accuracies": {
+        "traffic": 0.294,
+        "duration": 0.8,
+        "bandwidth": 0.266
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 107,
+      "phase": "Normal",
+      "duration_sec": 0.006411075592041016,
+      "cumulative_sec": 0.7190494537353516,
+      "cpu_percent": 100.0,
+      "memory_mb": 62.359375,
+      "accuracies": {
+        "traffic": 0.302,
+        "duration": 0.782,
+        "bandwidth": 0.292
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 108,
+      "phase": "Normal",
+      "duration_sec": 0.009510993957519531,
+      "cumulative_sec": 0.7285604476928711,
+      "cpu_percent": 100.0,
+      "memory_mb": 65.90625,
+      "accuracies": {
+        "traffic": 0.31,
+        "duration": 0.79,
+        "bandwidth": 0.3
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 109,
+      "phase": "Normal",
+      "duration_sec": 0.007120847702026367,
+      "cumulative_sec": 0.7356812953948975,
+      "cpu_percent": 0.0,
+      "memory_mb": 67.8125,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.792,
+        "bandwidth": 0.246
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 110,
+      "phase": "Normal",
+      "duration_sec": 0.006459951400756836,
+      "cumulative_sec": 0.7421412467956543,
+      "cpu_percent": 0.0,
+      "memory_mb": 62.640625,
+      "accuracies": {
+        "traffic": 0.262,
+        "duration": 0.788,
+        "bandwidth": 0.314
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 111,
+      "phase": "Compromised",
+      "duration_sec": 0.0054569244384765625,
+      "cumulative_sec": 0.7475981712341309,
+      "cpu_percent": 0.0,
+      "memory_mb": 60.078125,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.81,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 0.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 112,
+      "phase": "D&R-E",
+      "duration_sec": 0.004723072052001953,
+      "cumulative_sec": 0.7523212432861328,
+      "cpu_percent": 0.0,
+      "memory_mb": 59.5,
+      "accuracies": {
+        "traffic": 0.252,
+        "duration": 0.804,
+        "bandwidth": 0.27
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.1
+    },
+    {
+      "round": 113,
+      "phase": "D&R-E",
+      "duration_sec": 0.007715940475463867,
+      "cumulative_sec": 0.7600371837615967,
+      "cpu_percent": 97.7,
+      "memory_mb": 59.484375,
+      "accuracies": {
+        "traffic": 0.306,
+        "duration": 0.768,
+        "bandwidth": 0.25
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.15000000000000002
+    },
+    {
+      "round": 114,
+      "phase": "D&R-E",
+      "duration_sec": 0.004720211029052734,
+      "cumulative_sec": 0.7647573947906494,
+      "cpu_percent": 100.0,
+      "memory_mb": 58.359375,
+      "accuracies": {
+        "traffic": 0.27,
+        "duration": 0.796,
+        "bandwidth": 0.306
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.2
+    },
+    {
+      "round": 115,
+      "phase": "D&R-E",
+      "duration_sec": 0.005474090576171875,
+      "cumulative_sec": 0.7702314853668213,
+      "cpu_percent": 100.0,
+      "memory_mb": 55.96875,
+      "accuracies": {
+        "traffic": 0.298,
+        "duration": 0.802,
+        "bandwidth": 0.278
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.25
+    },
+    {
+      "round": 116,
+      "phase": "D&R-E",
+      "duration_sec": 0.005258083343505859,
+      "cumulative_sec": 0.7754895687103271,
+      "cpu_percent": 100.0,
+      "memory_mb": 55.609375,
+      "accuracies": {
+        "traffic": 0.272,
+        "duration": 0.824,
+        "bandwidth": 0.292
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.30000000000000004
+    },
+    {
+      "round": 117,
+      "phase": "D&R-E",
+      "duration_sec": 0.003047943115234375,
+      "cumulative_sec": 0.7785375118255615,
+      "cpu_percent": 96.4,
+      "memory_mb": 57.890625,
+      "accuracies": {
+        "traffic": 0.25,
+        "duration": 0.78,
+        "bandwidth": 0.278
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.35
+    },
+    {
+      "round": 118,
+      "phase": "D&R-E",
+      "duration_sec": 0.009713888168334961,
+      "cumulative_sec": 0.7882513999938965,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.46875,
+      "accuracies": {
+        "traffic": 0.258,
+        "duration": 0.802,
+        "bandwidth": 0.292
+      },
+      "participation": {
+        "C0": 0.3,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 81150640,
+        "tier2_ch_to_global": 20287660,
+        "tier3_global_to_ch": 20287660,
+        "tier4_ch_to_member": 81150640,
+        "total": 202876600
+      },
+      "divergence": 0.35
+    },
+    {
+      "round": 119,
+      "phase": "Continuity",
+      "duration_sec": 0.008344888687133789,
+      "cumulative_sec": 0.7965962886810303,
+      "cpu_percent": 0.0,
+      "memory_mb": 57.078125,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.776,
+        "bandwidth": 0.28
+      },
+      "participation": {
+        "C0": 0.7,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 93464543,
+        "tier2_ch_to_global": 23366135,
+        "tier3_global_to_ch": 23366135,
+        "tier4_ch_to_member": 93464543,
+        "total": 233661358
+      },
+      "divergence": 0.2
+    },
+    {
+      "round": 120,
+      "phase": "Continuity",
+      "duration_sec": 0.006759166717529297,
+      "cumulative_sec": 0.8033554553985596,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.65625,
+      "accuracies": {
+        "traffic": 0.262,
+        "duration": 0.772,
+        "bandwidth": 0.276
+      },
+      "participation": {
+        "C0": 0.7,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 109613924,
+        "tier2_ch_to_global": 27403481,
+        "tier3_global_to_ch": 27403481,
+        "tier4_ch_to_member": 109613924,
+        "total": 274034810
+      },
+      "divergence": 0.1
+    },
+    {
+      "round": 121,
+      "phase": "Continuity",
+      "duration_sec": 0.008444786071777344,
+      "cumulative_sec": 0.8118002414703369,
+      "cpu_percent": 0.0,
+      "memory_mb": 55.015625,
+      "accuracies": {
+        "traffic": 0.268,
+        "duration": 0.776,
+        "bandwidth": 0.272
+      },
+      "participation": {
+        "C0": 0.7,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.05
+    },
+    {
+      "round": 122,
+      "phase": "Stabilization",
+      "duration_sec": 0.004189014434814453,
+      "cumulative_sec": 0.8159892559051514,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.359375,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.764,
+        "bandwidth": 0.28
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 123,
+      "phase": "Stabilization",
+      "duration_sec": 0.00586700439453125,
+      "cumulative_sec": 0.8218562602996826,
+      "cpu_percent": 97.6,
+      "memory_mb": 53.859375,
+      "accuracies": {
+        "traffic": 0.268,
+        "duration": 0.772,
+        "bandwidth": 0.264
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 124,
+      "phase": "Stabilization",
+      "duration_sec": 0.005349159240722656,
+      "cumulative_sec": 0.8272054195404053,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.578125,
+      "accuracies": {
+        "traffic": 0.292,
+        "duration": 0.754,
+        "bandwidth": 0.242
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    },
+    {
+      "round": 125,
+      "phase": "Stabilization",
+      "duration_sec": 0.007055044174194336,
+      "cumulative_sec": 0.8342604637145996,
+      "cpu_percent": 0.0,
+      "memory_mb": 56.515625,
+      "accuracies": {
+        "traffic": 0.296,
+        "duration": 0.778,
+        "bandwidth": 0.276
+      },
+      "participation": {
+        "C0": 1.0,
+        "C1": 1.0,
+        "C2": 1.0
+      },
+      "communication_bytes": {
+        "tier1_member_to_ch": 121725960,
+        "tier2_ch_to_global": 30431490,
+        "tier3_global_to_ch": 30431490,
+        "tier4_ch_to_member": 121725960,
+        "total": 304314900
+      },
+      "divergence": 0.0
+    }
+  ]
+}

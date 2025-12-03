@@ -3,6 +3,7 @@ Complete Convergence Test with 4-Tier Communication Tracking and PyBullet Visual
 Simulates hierarchical federated learning with CUAV attack, D&R-E, and recovery phases
 
 Each UAV performs REAL network classification using trained_models/hierarchical_equal/
+Includes comprehensive KPI tracking matching notebook implementation
 """
 
 import numpy as np
@@ -266,11 +267,28 @@ def run_convergence_with_visualization():
     """
     Main function: Run convergence scenario with full communication tracking and visualization
     UAVs perform REAL network classification using trained FMTL models
+    Tracks comprehensive KPIs matching notebook implementation
     """
     print("=" * 80)
     print("CONVERGENCE SCENARIO WITH CUAV ATTACK")
     print("Hierarchical Federated Multi-Task Learning")
     print("=" * 80)
+    
+    # Initialize KPI tracking system
+    kpi_tracker = None
+    try:
+        from fmtl_visualization.kpi import ComprehensiveKPITracker
+        
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        kpi_output_dir = os.path.join(script_dir, 'trained_models', 'kpi_snapshots')
+        
+        kpi_tracker = ComprehensiveKPITracker(save_dir=kpi_output_dir)
+        
+        # Start experiment tracking
+        kpi_tracker.start_experiment()
+        print("✓ KPI tracking enabled - metrics will be saved to:", kpi_output_dir)
+    except ImportError as e:
+        print(f"⚠️ KPI tracker not available: {e}")
     
     # Initialize REAL model inference engine
     inference_engine = None
@@ -339,6 +357,16 @@ def run_convergence_with_visualization():
             phase = 'CONTINUITY'
         else:
             phase = 'STABILIZATION' if round_num < continuity_start + continuity_duration + 4 else 'NORMAL'
+        
+        # Start KPI tracking for this round
+        if kpi_tracker:
+            kpi_tracker.start_round()
+            
+            # Record attack events
+            if round_num == compromise_round:
+                kpi_tracker.record_attack_start(round_num)
+            elif round_num == detection_round:
+                kpi_tracker.record_attack_detected(round_num)
         
         # Determine Cluster 0 participation
         if phase in ['COMPROMISED', 'DRE']:
@@ -464,6 +492,55 @@ def run_convergence_with_visualization():
             'total_data': tracker.total_bytes / (1024 * 1024 * 1024),  # GB
         }
         
+        # End KPI tracking and save snapshot
+        if kpi_tracker:
+            try:
+                from fmtl_visualization.kpi_helpers import (
+                    compute_participation_rates,
+                    compute_model_divergence,
+                    determine_phase
+                )
+                
+                # Compute participation rates
+                kpi_phase, comp_cluster = determine_phase(round_num)
+                participation = compute_participation_rates(round_num, kpi_phase)
+                
+                # Compute divergence
+                divergence = compute_model_divergence(round_num, kpi_phase, comp_cluster if comp_cluster is not None else 0)
+                
+                # Prepare communication bytes dict (expected by KPI tracker)
+                # Approximate tier distribution based on total round bytes
+                communication_bytes_dict = {
+                    'tier1_member_to_ch': int(round_bytes * 0.4),
+                    'tier2_ch_to_global': int(round_bytes * 0.1),
+                    'tier3_global_to_ch': int(round_bytes * 0.1),
+                    'tier4_ch_to_member': int(round_bytes * 0.4),
+                    'total': int(round_bytes)
+                }
+                
+                # End round and save KPI snapshot
+                kpi_tracker.end_round(
+                    round_num=round_num,
+                    phase=kpi_phase,
+                    accuracies=accuracies,
+                    participation=participation,
+                    communication_bytes=communication_bytes_dict,
+                    divergence=divergence
+                )
+                
+                # Print KPI summary for key rounds
+                if round_num in [1, 110, 111, 112, 119, 122, 125]:
+                    print(f"\n📈 [Round {round_num}] KPI Summary:")
+                    print(f"   Phase: {kpi_phase}")
+                    print(f"   Participation: {participation}")
+                    print(f"   Communication: {round_bytes / (1024**2):.2f} MB")
+                    print(f"   Divergence: {divergence:.4f}")
+                    print(f"   Accuracies: Traffic={accuracies['traffic']:.4f}, "
+                          f"Duration={accuracies['duration']:.4f}, Bandwidth={accuracies['bandwidth']:.4f}")
+                    
+            except Exception as e:
+                print(f"⚠️ KPI tracking error: {e}")
+        
         # Update visualization if available
         if viz:
             viz.update_round(round_num, accuracies, comm_stats)
@@ -477,6 +554,17 @@ def run_convergence_with_visualization():
     print("SIMULATION COMPLETE")
     print(f"{'=' * 80}")
     tracker.print_final_summary()
+    
+    # Save KPI summary
+    if kpi_tracker:
+        try:
+            kpi_tracker.save_summary()
+            print(f"\n✅ KPI data saved to: {kpi_tracker.save_dir}")
+            print(f"   - Per-round snapshots: {len(kpi_tracker.round_history)} files")
+            print(f"   - Summary file: kpis_summary.json")
+            print(f"   - Attack info: {kpi_tracker.attack_info}")
+        except Exception as e:
+            print(f"⚠️ Failed to save KPI summary: {e}")
     
     if viz:
         viz.close()

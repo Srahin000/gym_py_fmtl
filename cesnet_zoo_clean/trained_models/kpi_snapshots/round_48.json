@@ -1,0 +1,26 @@
+{
+  "round": 48,
+  "phase": "Normal",
+  "duration_sec": 0.0032100677490234375,
+  "cumulative_sec": 0.3227970600128174,
+  "cpu_percent": 98.5,
+  "memory_mb": 54.390625,
+  "accuracies": {
+    "traffic": 0.308,
+    "duration": 0.674,
+    "bandwidth": 0.292
+  },
+  "participation": {
+    "C0": 1.0,
+    "C1": 1.0,
+    "C2": 1.0
+  },
+  "communication_bytes": {
+    "tier1_member_to_ch": 121725960,
+    "tier2_ch_to_global": 30431490,
+    "tier3_global_to_ch": 30431490,
+    "tier4_ch_to_member": 121725960,
+    "total": 304314900
+  },
+  "divergence": 0.0
+}
