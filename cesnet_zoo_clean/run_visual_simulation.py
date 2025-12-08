@@ -23,7 +23,7 @@ DRONE_URDF = os.path.join(ASSETS_DIR, 'cf2x.urdf')  # Crazyflie 2.x model
 
 # Configuration
 NUM_CLUSTERS = 3
-UAVS_PER_CLUSTER = 40  # 5 UAVs per cluster (15 total for testing with large models)
+UAVS_PER_CLUSTER = 15  # 5 UAVs per cluster (15 total for testing with large models)
 TOTAL_UAVS = NUM_CLUSTERS * UAVS_PER_CLUSTER
 TOTAL_ROUNDS = 30
 

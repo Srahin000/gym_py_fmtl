@@ -1,0 +1,23 @@
+{
+  "timestamp": "20251205_090806",
+  "experiments": {
+    "convergence": {
+      "rounds": 125,
+      "compromise_round": 111,
+      "clusters": [
+        0,
+        1,
+        2
+      ]
+    },
+    "transient": {
+      "rounds": 30,
+      "compromise_round": 11,
+      "clusters": [
+        0,
+        1,
+        2
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "20251204_204130",
+  "experiments": {
+    "convergence": {
+      "rounds": 125,
+      "compromise_round": 111,
+      "has_per_cluster_data": true
+    },
+    "transient": {
+      "rounds": 30,
+      "compromise_round": 11,
+      "has_per_cluster_data": true
+    }
+  }
+}
