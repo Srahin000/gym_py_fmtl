@@ -468,7 +468,7 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
                 attacker_start,
                 self.p.getQuaternionFromEuler([0, 0, 0]),
                 useFixedBase=False,
-                globalScaling=2.0
+                globalScaling=25.0
             )
             # Make it RED
             self.p.changeVisualShape(attacker_id, -1, rgbaColor=[1, 0, 0, 1])
@@ -507,10 +507,10 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
             # Update other UAVs and camera views
             for uav in self.uavs:
                 uav.update_position()
-            
+            """
             if step % 10 == 0:
                 update_camera_windows(self.uavs)
-            
+            """
             self.p.stepSimulation()
             time.sleep(0.02)
         
@@ -522,10 +522,10 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
                 ch0.set_color([1, 0, 0, 1])  # Red
             else:
                 ch0.set_color([0.5, 0, 0, 1])  # Dark red
-            
+            """
             if pulse % 5 == 0:
                 update_camera_windows(self.uavs)
-            
+            """
             self.p.stepSimulation()
             time.sleep(0.1)
         
@@ -594,15 +594,33 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
         if old_ch:
             old_ch.is_ch = False
             old_ch.set_color(CLUSTER_COLORS[cluster_id])
-            print(f"\n   Old CH: Drone {old_ch.drone_id} -> Regular drone")
-        
+            old_ch.is_compromised = True  # Mark old CH as compromised
+            print(f"\n   Old CH: Drone {old_ch.drone_id} -> Regular drone (compromised)")
+
         # Update new CH
         new_ch.is_ch = True
-        new_ch.is_frozen = False  # Unfreeze if was frozen
+        new_ch.is_compromised = False  # New CH is NOT compromised
+        new_ch.is_frozen = False
         new_ch.participation_level = 1.0
+        # Apply golden color to all links of the URDF
+        if new_ch.body_id is not None:
+            self.p.changeVisualShape(new_ch.body_id, -1, rgbaColor=COLOR_NEW_CH)
+            try:
+                num_joints = self.p.getNumJoints(new_ch.body_id)
+                for j in range(num_joints):
+                    self.p.changeVisualShape(new_ch.body_id, j, rgbaColor=COLOR_NEW_CH)
+            except:
+                pass
         
-        # Set golden color for new CH - use global constant
-        new_ch.set_color(COLOR_NEW_CH)
+        # Store compromised CH ID for filtering in global aggregation
+        self.compromised_ch_drone_id = old_ch.drone_id if old_ch else None
+
+
+        # IMPORTANT: Redirect all cluster drones to orbit the NEW CH
+        for d in self.uavs:
+            if d.cluster_id == cluster_id:
+                d.ch_position = new_ch.position.copy()
+
         
         print(f"   New CH elected: Drone {new_ch.drone_id}")
         print(f"      E_residual={getattr(new_ch, 'energy_residual', 0.8):.3f}")
@@ -623,9 +641,10 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
                 if phase == 'detection':
                     uav.participation_level = 0.0
                     uav.is_frozen = True  # Freeze movement
-                    if uav.is_ch:
-                        uav.is_compromised = True
-                        uav.set_color(COLOR_COMPROMISED)
+                    # Only the OLD compromised CH keeps red color
+                    if uav.is_compromised and hasattr(self, 'compromised_ch_drone_id'):
+                        if uav.drone_id == self.compromised_ch_drone_id:
+                            uav.set_color(COLOR_COMPROMISED)
                 elif phase == 'continuity':
                     rounds_since = server_round - self.compromise_round
                     if rounds_since == self.detection_rounds:
@@ -654,8 +673,10 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
                 uav.update_position()
             
             # Draw parameter lines
-            if frame % 5 == 0:  # Draw lines every 5 frames
+            
+            if frame == 0:  # Draw lines once
                 if line_type == 'local':
+
                     # Local aggregation: drones to CH
                     for uav in self.uavs:
                         if not uav.is_ch and uav.participation_level > 0:
@@ -679,26 +700,43 @@ class IntegratedHierarchicalCHStrategy(fl.server.strategy.FedAvg):
                                     uav.position, ch.position,
                                     lineColorRGB=color, lineWidth=2, lifeTime=0.3
                                 )
+                
                 elif line_type == 'global':
-                    # Global aggregation: CHs to CH1 (skip CH0 during detection)
+                    # Global aggregation: CHs → CH1
                     ch1 = next((u for u in self.uavs if u.is_ch and u.cluster_id == 1), None)
+
                     for uav in self.uavs:
-                        if uav.is_ch and uav.cluster_id != 1:
-                            # Skip CH0 during detection
-                            if uav.cluster_id == 0 and phase == 'detection':
-                                continue
-                            
-                            if ch1:
-                                color = [1, 1, 0] if uav.cluster_id == 0 else [0, 0.5, 1]
-                                self.p.addUserDebugLine(
-                                    uav.position, ch1.position,
-                                    lineColorRGB=color, lineWidth=3, lifeTime=0.3
-                                )
-            
+                        if not uav.is_ch:
+                            continue
+
+                        # Block ONLY the compromised CH (not the new elected CH)
+                        if uav.is_compromised and hasattr(self, 'compromised_ch_drone_id'):
+                            if uav.drone_id == self.compromised_ch_drone_id:
+                                continue  # Skip the old compromised CH
+
+                        # During detection phase, block all Cluster 0 CHs
+                        if uav.cluster_id == 0 and phase == 'detection':
+                            continue
+
+                        if uav.cluster_id == 1:
+                            continue  # CH1 is the aggregator
+
+                        if ch1:
+                            # Golden line for new CH, blue for others
+                            if uav.cluster_id == 0 and not uav.is_compromised:
+                                color = [1, 0.84, 0]  # Golden for new CH0
+                            else:
+                                color = [0, 0.5, 1]  # Blue for normal CHs
+                            self.p.addUserDebugLine(
+                                uav.position, ch1.position,
+                                lineColorRGB=color, lineWidth=3, lifeTime=0.3
+                            )
+
+            """
             # Update camera views every few frames
             if frame % 5 == 0:
                 update_camera_windows(self.uavs)
-            
+            """
             self.p.stepSimulation()
             time.sleep(0.01)
     
@@ -934,7 +972,7 @@ class UAV:
             return
         
         # Orbit around CH
-        self.orbit_angle += self.orbit_speed * 0.05
+        self.orbit_angle += self.orbit_speed * 0.05 * 2.5
         self.position[0] = self.ch_position[0] + self.orbit_radius * np.cos(self.orbit_angle)
         self.position[1] = self.ch_position[1] + self.orbit_radius * np.sin(self.orbit_angle)
         self.position[2] = self.ch_position[2] + self.orbit_height_offset
@@ -1122,20 +1160,6 @@ def main():
         cameraTargetPosition=[0, 0, 25]
     )
     
-    # Add text labels for cluster views
-    print("   Setting up camera views for each cluster...")
-    cluster_view_text_ids = []
-    for i in range(3):
-        text_pos = CLUSTER_POSITIONS[i] + np.array([0, 0, 12])
-        text_id = p.addUserDebugText(
-            f"Cluster {i}\n(Press {i+1} for zoom)",
-            text_pos,
-            textColorRGB=[1, 1, 1],
-            textSize=1.5
-        )
-        cluster_view_text_ids.append(text_id)
-    
-    print("   Press 1/2/3 for zoomed cluster views, 0 for overview")
     
     # Create UAVs
     print("\nCreating UAV swarm...")
@@ -1167,7 +1191,7 @@ def main():
                 uav.body_id = p.loadURDF(DRONE_URDF, position,
                                          p.getQuaternionFromEuler([0, 0, 0]),
                                          useFixedBase=True,
-                                         globalScaling=3.0)
+                                         globalScaling=25.0)
             else:
                 collision = p.createCollisionShape(p.GEOM_SPHERE, radius=0.9)
                 visual = p.createVisualShape(p.GEOM_SPHERE, radius=0.9)
@@ -1387,17 +1411,20 @@ def main():
     
     # Create initial camera windows
     print("\nOpening camera windows...")
+    """
     update_camera_windows(uavs)
+    """
     
     try:
         frame_count = 0
         while True:
             for uav in uavs:
                 uav.update_position()
-            
+            """
             # Update camera views every 10 frames
             if frame_count % 10 == 0:
                 update_camera_windows(uavs)
+            """
             
             p.stepSimulation()
             frame_count += 1

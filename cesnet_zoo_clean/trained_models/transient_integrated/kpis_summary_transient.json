@@ -1,0 +1,269 @@
+{
+  "model_parameters": {
+    "total_parameters": 64591,
+    "total_bytes": 258364,
+    "total_kb": 252.30859375,
+    "total_mb": 0.24639511108398438,
+    "num_layers": 16,
+    "layer_details": [
+      {
+        "layer": 0,
+        "shape": [
+          39,
+          256
+        ],
+        "dtype": "float32",
+        "params": 9984,
+        "bytes": 39936,
+        "kb": 39.0,
+        "mb": 0.0380859375
+      },
+      {
+        "layer": 1,
+        "shape": [
+          256
+        ],
+        "dtype": "float32",
+        "params": 256,
+        "bytes": 1024,
+        "kb": 1.0,
+        "mb": 0.0009765625
+      },
+      {
+        "layer": 2,
+        "shape": [
+          256,
+          128
+        ],
+        "dtype": "float32",
+        "params": 32768,
+        "bytes": 131072,
+        "kb": 128.0,
+        "mb": 0.125
+      },
+      {
+        "layer": 3,
+        "shape": [
+          128
+        ],
+        "dtype": "float32",
+        "params": 128,
+        "bytes": 512,
+        "kb": 0.5,
+        "mb": 0.00048828125
+      },
+      {
+        "layer": 4,
+        "shape": [
+          128,
+          64
+        ],
+        "dtype": "float32",
+        "params": 8192,
+        "bytes": 32768,
+        "kb": 32.0,
+        "mb": 0.03125
+      },
+      {
+        "layer": 5,
+        "shape": [
+          64
+        ],
+        "dtype": "float32",
+        "params": 64,
+        "bytes": 256,
+        "kb": 0.25,
+        "mb": 0.000244140625
+      },
+      {
+        "layer": 6,
+        "shape": [
+          128,
+          32
+        ],
+        "dtype": "float32",
+        "params": 4096,
+        "bytes": 16384,
+        "kb": 16.0,
+        "mb": 0.015625
+      },
+      {
+        "layer": 7,
+        "shape": [
+          32
+        ],
+        "dtype": "float32",
+        "params": 32,
+        "bytes": 128,
+        "kb": 0.125,
+        "mb": 0.0001220703125
+      },
+      {
+        "layer": 8,
+        "shape": [
+          128,
+          64
+        ],
+        "dtype": "float32",
+        "params": 8192,
+        "bytes": 32768,
+        "kb": 32.0,
+        "mb": 0.03125
+      },
+      {
+        "layer": 9,
+        "shape": [
+          64
+        ],
+        "dtype": "float32",
+        "params": 64,
+        "bytes": 256,
+        "kb": 0.25,
+        "mb": 0.000244140625
+      },
+      {
+        "layer": 10,
+        "shape": [
+          64,
+          5
+        ],
+        "dtype": "float32",
+        "params": 320,
+        "bytes": 1280,
+        "kb": 1.25,
+        "mb": 0.001220703125
+      },
+      {
+        "layer": 11,
+        "shape": [
+          5
+        ],
+        "dtype": "float32",
+        "params": 5,
+        "bytes": 20,
+        "kb": 0.01953125,
+        "mb": 1.9073486328125e-05
+      },
+      {
+        "layer": 12,
+        "shape": [
+          32,
+          5
+        ],
+        "dtype": "float32",
+        "params": 160,
+        "bytes": 640,
+        "kb": 0.625,
+        "mb": 0.0006103515625
+      },
+      {
+        "layer": 13,
+        "shape": [
+          5
+        ],
+        "dtype": "float32",
+        "params": 5,
+        "bytes": 20,
+        "kb": 0.01953125,
+        "mb": 1.9073486328125e-05
+      },
+      {
+        "layer": 14,
+        "shape": [
+          64,
+          5
+        ],
+        "dtype": "float32",
+        "params": 320,
+        "bytes": 1280,
+        "kb": 1.25,
+        "mb": 0.001220703125
+      },
+      {
+        "layer": 15,
+        "shape": [
+          5
+        ],
+        "dtype": "float32",
+        "params": 5,
+        "bytes": 20,
+        "kb": 0.01953125,
+        "mb": 1.9073486328125e-05
+      }
+    ]
+  },
+  "learning_performance": {
+    "global_accuracy_history": [
+      0.23251048921762227,
+      0.557526033883375,
+      0.5761362709031533,
+      0.5794567882145857,
+      0.5805169082831385,
+      0.5830272213822973,
+      0.5858673116332718,
+      0.590745182537364,
+      0.5928237013973786,
+      0.5960835123767524,
+      0.6165538838596177,
+      0.34199369237135163,
+      0.6197286021058149,
+      0.6245800191575729,
+      0.6282872111798814,
+      0.6329503532032563,
+      0.637237134250987,
+      0.6418486786770137,
+      0.6460815544139902,
+      0.6498372579998452,
+      0.6532720492129516,
+      0.6566679147690284,
+      0.3921159349160879,
+      0.6599030338188387,
+      0.42956448459424795,
+      0.45852828944570523,
+      0.4825034928481517,
+      0.5022347338081271,
+      0.5142284550703019,
+      0.5377348879178038
+    ],
+    "final_global_accuracy": 0.5377348879178038,
+    "per_task_final_accuracy": {
+      "traffic": 0.5995203836930456,
+      "duration": 0.5179856115107914,
+      "bandwidth": 0.4628297362110312
+    },
+    "per_cluster_final_accuracy": {
+      "0": 0.5414165666266507,
+      "1": 0.5194077631052422,
+      "2": 0.5267785771382895
+    },
+    "per_cluster_convergence_round": {
+      "0": 11,
+      "1": 11,
+      "2": 11
+    },
+    "global_convergence_round": 11,
+    "total_rounds": 30
+  },
+  "communication": {
+    "total_communication_bytes": 9301104000,
+    "total_communication_mb": 8870.223999023438,
+    "total_communication_gb": 8.662328124046326,
+    "avg_bytes_per_round": 310036800.0,
+    "communication_breakdown": {
+      "normal": 3100368000,
+      "attack": 2480294400,
+      "recovery": 3720441600
+    },
+    "per_cluster_avg_communication": {}
+  },
+  "attack_recovery": {
+    "attack_detected": true,
+    "compromise_round": 11,
+    "pre_attack_accuracy": 0.6165538838596177,
+    "attack_round_accuracy": 0.34199369237135163,
+    "accuracy_degradation": 0.2745601914882661,
+    "recovery_round": 13,
+    "time_to_restore_accuracy_rounds": 2,
+    "recovery_complete": true
+  }
+}
