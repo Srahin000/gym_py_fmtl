@@ -253,8 +253,7 @@
       "normal": 3100368000,
       "attack": 2480294400,
       "recovery": 3720441600
-    },
-    "per_cluster_avg_communication": {}
+    }
   },
   "attack_recovery": {
     "attack_detected": true,
