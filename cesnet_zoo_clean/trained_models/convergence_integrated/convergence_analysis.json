@@ -1,0 +1,11 @@
+{
+  "convergence_round": 106,
+  "total_rounds": 125,
+  "initial_accuracy": 0.2373964257898819,
+  "final_accuracy": 0.7986672596737479,
+  "convergence_accuracy": 0.78675704566515,
+  "slope_threshold": 0.0005,
+  "window_size": 10,
+  "min_slope": 0.0003321190800403048,
+  "max_slope": 0.033407548759267595
+}
