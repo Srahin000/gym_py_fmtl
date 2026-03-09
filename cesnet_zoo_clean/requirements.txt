@@ -2,7 +2,7 @@
 # Python 3.8+ recommended
 
 # Deep Learning Framework
-tensorflow>=2.10.0,<2.16.0
+tensorflow>=2.10.0,<2.22.0
 keras>=2.10.0
 
 # Federated Learning
